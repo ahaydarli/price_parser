@@ -3,7 +3,7 @@ from typing import Dict
 
 
 class ParserError(Exception):
-    """A Parser object contains a lot of parsers
+    """Parser Exception that raised for issues during parsing
     Args:
         msg (str): Error message
     """
@@ -13,7 +13,7 @@ class ParserError(Exception):
 
 
 class Parser(ABC):
-    """A Parser object contains a lot of parsers"""
+    """Abstract Base Class for parsers to ensure that they all implement the same methods"""
 
     @classmethod
     @abstractmethod

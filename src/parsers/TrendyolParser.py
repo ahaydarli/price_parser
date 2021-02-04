@@ -23,7 +23,7 @@ class TrendyolParser(Parser):
 
     @classmethod
     def parse_from_url(cls, url: str) -> Dict:
-        """Makes request to given url
+        """Fetches product price data from given url
 
         Args:
           url (str): Product url
